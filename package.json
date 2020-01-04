@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "env-cmd -f .env nodemon graphql/index.js",
-    "deploy": "cd prisma && prisma deploy -e ../.env"
+    "deploy": "cd prisma && prisma deploy -e ../.env",
+    "token": "cd prisma && prisma token -e ../.env -c"
   },
   "license": "MIT",
   "dependencies": {
