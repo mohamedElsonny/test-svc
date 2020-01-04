@@ -1,0 +1,10 @@
+# import User, UserCreateInput from "prismaSchema"
+
+type Query {
+  users: [User]
+  userByID(id: ID): User
+}
+
+type Mutation {
+  addUser(name: String, age: Int): User
+}
